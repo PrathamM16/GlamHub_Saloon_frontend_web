@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Locator</title>
+    <!-- Include Google Maps API with your API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCSoZ3oicycfCf8Ow4XQsRTmEtefVIHRE&libraries=places"></script>
+    <style>
+        /* CSS for map container */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <script>
+        // Array of branch locations
+        const branchLocations = [
+            { lat: 12.9100, lng: 77.5739, name: 'Uttarahalli, Bengaluru, Karnataka, India' }, // Uttarahalli
+            { lat: 12.9121, lng: 77.6057, name: 'Christ University SG Palya, Bengaluru, Karnataka, India' }, // Christ University SG Palya
+            { lat: 12.9572, lng: 77.5965, name: 'Shantinagar, Bengaluru, Karnataka, India' }, // Shantinagar
+            { lat: 12.9366, lng: 77.6047, name: 'St. Joseph University, Bengaluru, Karnataka, India' }, // St. Joseph University
+            { lat: 12.9665, lng: 77.6079, name: 'Mount Carmel College, Bengaluru, Karnataka, India' }, // Mount Carmel College
+            { lat: 12.9426, lng: 77.5692, name: 'Basavangudi, Bengaluru, Karnataka, India' }, // Basavangudi
+            { lat: 12.9352, lng: 77.6245, name: 'Koramangala, Bengaluru, Karnataka, India' }, // Koramangala
+            { lat: 12.9318, lng: 77.5863, name: 'Jayanagar, Bengaluru, Karnataka, India' }, // Jayanagar
+            { lat: 13.0054, lng: 77.5709, name: 'Malleshwaram, Bengaluru, Karnataka, India' }, // Malleshwaram
+            { lat: 12.9141, lng: 77.6109, name: 'BTM Layout, Bengaluru, Karnataka, India' } // BTM Layout
+        ];
+
+        // Initialize the map
+        function initMap() {
+            // Default map options
+            const mapOptions = {
+                center: { lat: 12.9716, lng: 77.5946 }, // Default center (Example: Bengaluru)
+                zoom: 12, // Default zoom level
+            };
+
+            // Create a new map instance
+            const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            // Create markers for each branch location
+            branchLocations.forEach(branch => {
+                const marker = new google.maps.Marker({
+                    position: { lat: branch.lat, lng: branch.lng },
+                    map: map,
+                    title: branch.name
+                });
+
+                // Add click event listener to each marker
+                marker.addListener('click', () => {
+                    // Open directions to the branch when marker is clicked
+                    window.open(`https://www.google.com/maps/dir/?api=1&destination=${branch.lat},${branch.lng}`);
+                });
+            });
+        }
+    </script>
+
+    <!-- Call the initMap function when the page loads -->
+    <script>
+        initMap();
+    </script>
+</body>
+</html>

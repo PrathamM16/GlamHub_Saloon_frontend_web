@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamHub Studios</title>
+    <!-- <link rel="stylesheet" href="glamhub-style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="appointment.css"> -->
+    
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@700&display=swap' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <a href="appointment.html" class="logo"><span>G</span>lamHub Studios</a>
+        <ul class="navlist">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shopcart.html">Shop-Cart</a></li>
+            <li><a href="maps1.html">Shop-Locator</a></li>
+            <li><a href="http://localhost:3000">Membership</a></li>
+            <li><a href="#">Face-Shape-Detector</a></li>
+        </ul>
+        <a href="want_to_talk.html" class="btn">Want to Talk? <i class='bx bx-message-square-dots'></i></a>
+    </header>
+    
+
+    <section class="home" style="background-image: url('C:/Users/Pratham.m/Pictures/Screenshots/58.png');">
+        <div class="hero-info">
+            <h1>.</h1>
+
+            <div class="text-animate">
+                <h2>Embrace Elegance, Experience Glamour.</h2>
+            </div>
+            
+            <p>Experience the future of beauty services with GlamHub.</p>
+
+            <div class="btn-box">
+                <a href="services.html" class="btn">Explore Services <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="C:\Users\Pratham.m\Downloads\GLAM.pdf" class="btn d-CV">Download Brochure <i class='bx bxs-download' ></i></a>
+            </div>
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="center">Our Services</h2>
+            <div class="service-item" id="wedding">
+                <div class="row">
+                    <div class="col-left">
+                        <h3 class="center">Wedding Planning</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae nunc eget est consequat feugiat ac vitae justo.</p>
+                        <a href="#wedding" class="visit-btn">Visit Wedding Planning</a>
+                    </div>
+                    <div class="col-right">
+                        <a href="E:\PRATHAM FILES\Event\img1.jpg" target="_blank">
+                            <img src="E:\PRATHAM FILES\Event\img1.jpg" alt="Wedding Planning">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item alternate" id="corporate">
+                <div class="row">
+                    <div class="col-left">
+                        <img src="E:/PRATHAM FILES/Event/imgc.jpg" alt="Corporate Events">
+                    </div>
+                    <div class="col-right">
+                        <h3 class="center">Corporate Events</h3>
+                        <p>Integer rhoncus eget dolor id luctus. Sed interdum, ipsum vel aliquet consectetur, odio libero pellentesque risus, eu consectetur tortor dolor eu nisl.</p>
+                        <a href="#corporate" class="visit-btn">Visit Corporate Events</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item" id="birthday">
+                <div class="row">
+                    <div class="col-left">
+                        <h3 class="center">Birthday Parties</h3>
+                        <p>Sed et ligula vel orci efficitur convallis. Nam vehicula vestibulum mauris, id tristique magna suscipit ac.</p>
+                        <a href="#birthday" class="visit-btn">Visit Birthday Parties</a>
+                    </div>
+                    <div class="col-right">
+                        <img src="E:\PRATHAM FILES\Event\imgb.jpg" alt="Birthday Parties">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.service-item img');
+
+            items.forEach(item => {
+                item.addEventListener('mousemove', e => {
+                    const x = e.pageX - e.target.offsetLeft;
+                    const y = e.pageY - e.target.offsetTop;
+
+                    e.target.style.transformOrigin = `${x}px ${y}px`;
+                    e.target.style.transform = 'scale(1.1)';
+                });
+
+                item.addEventListener('mouseleave', e => {
+                    e.target.style.transformOrigin = 'center center';
+                    e.target.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+    
+    
+    
+    
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <section class="appointment">
+        <h1>Book an Appointment</h1>
+        <div class="appointment-card">
+            <div class="appointment-form">
+                <form id="appointmentForm" action="#" method="POST">
+                    <label for="date">Select Date and Time:</label><br>
+                    <input type="datetime-local" id="date" name="date" required><br>
+    
+                    <label for="service">Select Service:</label><br>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="styling">Styling</option>
+                        <option value="coloring">Coloring</option>
+                    </select><br>
+    
+                    <label for="stylist">Select Stylist:</label><br>
+                    <select id="stylist" name="stylist" required>
+                        <option value="" disabled selected>Select a stylist</option>
+                        <option value="stylist1">Stylist 1</option>
+                        <option value="stylist2">Stylist 2</option>
+                        <option value="stylist3">Stylist 3</option>
+                    </select><br>
+    
+                    <label for="area">Select Area:</label><br>
+                    <select id="area" name="area" required>
+                        <option value="" disabled selected>Select an area</option>
+                        <option value="area1">Area 1</option>
+                        <option value="area2">Area 2</option>
+                        <option value="area3">Area 3</option>
+                    </select><br>
+    
+                    <label for="branch">Select Branch:</label><br>
+                    <select id="branch" name="branch" required>
+                        <option value="" disabled selected>Select a branch</option>
+                        <option value="branch1">Branch 1</option>
+                        <option value="branch2">Branch 2</option>
+                        <option value="branch3">Branch 3</option>
+                    </select><br>
+    
+                    <label for="notes">Additional Notes:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special requests or additional information"></textarea><br>
+    
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+    
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+    
+                    <button type="submit">Book Appointment</button>
+                </form>
+            </div>
+            <div class="customer-details">
+                <h2>Customer Details</h2>
+                <ul id="customerDetailsList"></ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Include JavaScript for date picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+    <script>
+        flatpickr("#date", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+        });
+
+        // Form submission handling
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            // Display customer details
+            const customerDetailsList = document.getElementById("customerDetailsList");
+            customerDetailsList.innerHTML = ""; // Clear previous details
+            
+            for (const [key, value] of formData.entries()) {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${key}:</strong> ${value}`;
+                customerDetailsList.appendChild(listItem);
+            }
+            
+            // You can add your form submission handling code here
+            // For demonstration purposes, let's just show an alert
+            alert("Thank you for booking! You will receive a confirmation email shortly.");
+            // You can redirect the user to a thank you page or do any other necessary actions
+            // For redirection, you can use window.location.href = "thankyou.html";
+        });
+    </script>
+
+    <!-- //*-----------------------------footer-----------------*/ -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h3>Download Our App</h3>
+                        <p>Download the Event Castle app for Android and iOS mobile phones.</p>
+                        <div class="app-logo">
+                            <img src="path/to/googleplay.png" alt="Google Play">
+                            <img src="path/to/appstore.png" alt="App Store">
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <img src="path/to/logo.png" alt="Event Castle" width="150">
+                        <p>Your go-to destination for seamless event management experiences.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Events</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="branches">Branches: [List of branches here]</p>
+                <p class="HelplineNumber">Helpline Number: [Your helpline number]</p>
+                <p class="copyright">&copy; 2024 Event Castle. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

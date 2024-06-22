@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Shopping Cart</title>
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="styleshop.css">
+	
+	
+  
+  </head>
+  <div>
+    <nav>
+      <ul class="navlist">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skill.html">Shop-Cart</a></li>
+        <li><a href="Education.html">Shop-Locator</a></li>
+        <li><a href="E:\3RD_TRIMISTER\FaceShape-master\app.py">Face-Shape-Detector</a></li>
+      </ul>
+    </nav>
+</div>
+  <body>
+ 
+  
+      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+    <div class="container"> 
+   <h1>Shopping Cart</h1>
+
+   <div id="alerts"></div>
+
+  <div class="productcont">
+    <div class="row">
+      <div class="col-1">
+        <div class="product">
+            <h3 class="productname">Shaving Cream</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">₹189.00</p>
+            <img src="Images\jersey-short-500x500.png" width="20%" id="product-img">
+            <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+    
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Powder</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹79.00</p>
+          <img src="Images\YS1.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Cooler</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹110.00</p>
+          <img src="Images\track.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+    
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Glouse</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹119.00</p>
+          <img src="Images\glouse.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+    
+      <div class="col-2">
+        <div class="product">
+          <h3 class="productname">Moisture Spray</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹879.00</p>
+          <img src="Images\baseballbat.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Facial Cream</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹1089.00</p>
+          <img src="Images\Batminton.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Combs</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹410.00</p>
+          <img src="Images\Football-removebg-preview.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Scissors</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹719.00</p>
+          <img src="Images\Swimcostume-removebg-preview.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="product">
+          <h3 class="productname">Trimmer</h3>
+          <p>Product description excerpt...</p>
+          <p class="price">₹779.00</p>
+          <img src="Images\hockey-removebg-preview.png" width="20%" id="product-img">
+          <button class="addtocart">Add To Cart</button>
+        </div>
+      </div>
+        <div class="col-1">
+          <div class="product">
+            <h3 class="productname">Head Massage Oil</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">₹389.00</p>
+            <img src="Images\googles.png" width="20%" id="product-img">
+            <button class="addtocart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="product">
+            <h3 class="productname">Bleaching</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">₹210.00</p>
+            <img src="Images\shorts.png" width="20%" id="product-img">
+            <button class="addtocart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="product">
+            <h3 class="productname">MakeUpset</h3>
+            <p>Product description excerpt...</p>
+            <p class="price">₹319.00</p>
+            <img src="Images\rugby-removebg-preview.png" width="20%" id="product-img">
+            <button class="addtocart">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+      
+        <div class="cart-container">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>₹<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            
+            <a href="Payment.html" class="btn">PROCEED FOR PAYMENT &#8594</a>
+          </div>
+        </div>
+      
+</div>
+<!-- partial -->
+
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+ 
+      
+  
+
+        <script  src="shopscript.js"></script> 
+  </body>
+</html>

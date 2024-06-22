@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamHub Studios</title>
+    <!-- <link rel="stylesheet" href="glamhub-style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="appointment.css"> -->
+    
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@700&display=swap' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><span>G</span>lamHub Studios</a>
+        <ul class="navlist">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shopcart.html">Shop-Cart</a></li>
+            <li><a href="maps1.html">Shop-Locator</a></li>
+            <li><a href="http://localhost:3000">Membership</a></li>
+            <li><a href="#">Face-Shape-Detector</a></li>
+        </ul>
+        <a href="Want to talk.html" class="btn">Want to Talk? <i class='bx bx-message-square-dots'></i></a>
+    </header>
+    
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #eb5a52;
+            padding: 20px 8%; /* Adjusted padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navlist {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navlist li {
+            margin-right: 20px;
+        }
+        .logo {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            margin-right: 20px; /* Adjusted margin */
+        }
+        .btn {
+            background-color: #ff523b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .about-section {
+            padding: 50px 20px;
+            margin-top: 100px; /* Adjusted margin-top */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about-content,
+        .about-images {
+            flex-basis: 50%;
+        }
+        .about-images {
+            display: flex;
+            justify-content: space-between;
+        }
+        .about-images .col-4 {
+            width: 48%; /* Adjust as needed */
+        }
+        .about-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .about-images p {
+            text-align: center;
+        }
+        footer {
+            background-color: radial-gradient(rgb(248, 247, 253), #eb5a52);
+            color: #700707;
+            padding: 50px 20px;
+        }
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-col {
+            flex-basis: 25%;
+        }
+        .footer-col h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .footer-col p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .footer-col ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Welcome to Event Castle, your go-to destination for seamless event management experiences. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non feugiat lacus.</p>
+            </div>
+            <div class="about-images">
+                <div class="col-4">
+                    <img src="E:\PRATHAM FILES\Event\img3.jpg" alt="Left Image">
+                    <p>Description of the left image.</p>
+                </div>
+                <div class="col-4">
+                    <img src="E:\PRATHAM FILES\Event\img3.jpg" alt="Right Image">
+                    <p>Description of the right image.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h3>Download Our App</h3>
+                        <p>Download the Event Castle app for Android and iOS mobile phones.</p>
+                        <div class="app-logo">
+                            <img src="path/to/googleplay.png" alt="Google Play">
+                            <img src="path/to/appstore.png" alt="App Store">
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <img src="path/to/logo.png" alt="Event Castle" width="150">
+                        <p>Your go-to destination for seamless event management experiences.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Events</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="branches">Branches: [List of branches here]</p>
+                <p class="HelplineNumber">Helpline Number: [Your helpline number]</p>
+                <p class="copyright">&copy; 2024 Event Castle. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
