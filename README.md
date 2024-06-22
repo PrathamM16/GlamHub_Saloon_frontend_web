@@ -1,4 +1,7 @@
+To clone the repository GlamHub_Saloon_frontend_web from GitHub, use the following command in your terminal or command prompt:
 
+bash
+git clone https://github.com/PrathamM16/GlamHub_Saloon_frontend_web.git
 ![image](https://github.com/PrathamM16/GlamHub_Saloon_frontend_web/assets/121935421/6408c1d3-1d08-455f-a7ca-45514353c1c7)
 ![image](https://github.com/PrathamM16/GlamHub_Saloon_frontend_web/assets/121935421/9ddee9ef-2264-4538-affd-ad566136da50)
 ![image](https://github.com/PrathamM16/GlamHub_Saloon_frontend_web/assets/121935421/58392cc2-8253-4af1-963a-cd26a8891a66)
